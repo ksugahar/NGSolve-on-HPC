@@ -7,10 +7,8 @@
 ---
 ## 準備2：動作確認用のファイル
 ---
-
-shareフォルダに菅原がシェアするものはいれてある。
 ```
-cp ../share/NGSolve/check* .
+https://github.com/ksugahar/NGSolve-on-HPC.git
 ```
 
 ---
