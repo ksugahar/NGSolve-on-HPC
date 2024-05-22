@@ -42,6 +42,7 @@ mpirun -np 2 python3 check_mpi.py
 (u,f) = 0.03514425373579321
 となれば計算できているでしょう。
 solution.pickelはゴミなので削除
+
 ```
 rm solution.pickle*
 ```
@@ -65,5 +66,6 @@ mpirun -np 128 python3
 これをpjsub経由で実行
 pjsub check3_pjsub.sh
 solution.pickelが大量に作成されたら成功
+
 solution.pickelはゴミなので確認後削除
 
