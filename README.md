@@ -2,8 +2,10 @@
 ---
 ## 準備1： NGSolveのインストール
 ---
+
 これは結構ややこしい。
 install.shを準備してありますがアップはしていません。
+
 ---
 ## 準備2：動作確認用のファイルの取得
 ---
@@ -20,6 +22,7 @@ module load impi
 python3 check_single.py
 ````
 NGSolveのバージョンが戻ってきたら動作しているはず。
+
 ---
 ## Check2： 次にinteractiveモードで並列実行
 ---
@@ -43,6 +46,7 @@ solution.pickelはゴミなので削除
 rm solution.pickle*
 ```
 計算が終わったらexitでinteractiveから抜けましょう。
+
 ---
 ## Check3： 最後に128並列を実行
 ---
@@ -62,3 +66,4 @@ mpirun -np 128 python3
 pjsub check3_pjsub.sh
 solution.pickelが大量に作成されたら成功
 solution.pickelはゴミなので確認後削除
+
