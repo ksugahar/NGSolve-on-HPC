@@ -5,7 +5,7 @@
 これは結構ややこしい。
 
 ---
-## 準備2：動作確認用のファイル
+## 準備2：動作確認用のファイルの取得
 ---
 ```
 git clone https://github.com/ksugahar/NGSolve-on-HPC.git
