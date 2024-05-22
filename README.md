@@ -3,14 +3,13 @@
 ## 準備1： NGSolveのインストール
 ---
 これは結構ややこしい。
-
+install.shを準備してありますがアップはしていません。
 ---
 ## 準備2：動作確認用のファイルの取得
 ---
 ```
 git clone https://github.com/ksugahar/NGSolve-on-HPC.git
 ```
-
 ---
 ## Check1： まずはログインノードにてシングルコアで実施
 ---
@@ -20,9 +19,7 @@ module load intel
 module load impi
 python3 check_single.py
 ````
-
 NGSolveのバージョンが戻ってきたら動作しているはず。
-
 ---
 ## Check2： 次にinteractiveモードで並列実行
 ---
@@ -39,7 +36,6 @@ module load intel
 module load impi
 mpirun -np 2 python3 check_mpi.py
 ```
-
 (u,f) = 0.03514425373579321
 となれば計算できているでしょう。
 solution.pickelはゴミなので削除
@@ -47,7 +43,6 @@ solution.pickelはゴミなので削除
 rm solution.pickle*
 ```
 計算が終わったらexitでinteractiveから抜けましょう。
-
 ---
 ## Check3： 最後に128並列を実行
 ---
