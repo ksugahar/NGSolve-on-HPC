@@ -8,7 +8,7 @@
 ## 準備2：動作確認用のファイル
 ---
 ```
-https://github.com/ksugahar/NGSolve-on-HPC.git
+git clone https://github.com/ksugahar/NGSolve-on-HPC.git
 ```
 
 ---
