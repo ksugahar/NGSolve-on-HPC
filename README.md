@@ -36,7 +36,7 @@ pjsub --interact -g gy42 -L rscgrp=interactive-a,node=1
 でインターラクティブモードに入る。
 よく使うのでエイリアスに登録してもよい。
 
-インターラクティブモードではmoduleはloadし直し。
+インターラクティブモードではmoduleはloadし直しになります。mpirunが並列実行のコマンド。
 ```
 module load intel
 module load impi
@@ -67,7 +67,7 @@ module load intel
 module load impi
 mpirun -np 128 python3
 ```
-これをpjsub経由で実行する。
+これをpjsub経由で実行する。すると，128並列での計算が実行される。
 ```
 pjsub check3_pjsub.sh
 ```
