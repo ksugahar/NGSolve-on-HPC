@@ -42,13 +42,11 @@ module load intel
 module load impi
 mpirun -np 2 python3 check_mpi.py
 ```
+```
 (u,f) = 0.03514425373579321
+```
 となれば計算できているでしょう。
 終わったら，
-'''
-rm solution.pickel*
-'''
-
 ```
 rm solution.pickle*
 ```
