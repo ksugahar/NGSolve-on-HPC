@@ -20,8 +20,11 @@ git clone https://github.com/ksugahar/NGSolve-on-HPC.git
 module load intel
 module load impi
 python3 check_single.py
-````
-NGSolveのバージョンが戻ってきたら動作しているはず。
+```
+下記のようにNGSolveのバージョンが戻ってきたら動作しているはず。
+```
+6.2.2401
+```
 
 ---
 ## Check2： 次にinteractiveモードで並列実行
