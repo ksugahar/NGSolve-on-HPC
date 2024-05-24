@@ -63,9 +63,14 @@ module load intel
 module load impi
 mpirun -np 128 python3
 ```
-これをpjsub経由で実行
+これをpjsub経由で実行する。
+'''
 pjsub check3_pjsub.sh
+'''
 solution.pickelが大量に作成されたら成功
-
-solution.pickelはゴミなので確認後削除
+終わったら，
+'''
+rm solution.pickel*
+'''
+削除してよい。
 
